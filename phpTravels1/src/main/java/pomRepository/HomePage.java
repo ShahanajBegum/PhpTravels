@@ -13,20 +13,20 @@ public class HomePage {
 	}
 	
 	@FindBy(xpath="//button[contains(text(),'Account')]")
-	private WebElement Account;
+	private static WebElement Account;
+	
+	public static WebElement  getAccount() {
+		return Account;
+	}
 	
 
 	@FindBy(xpath="//a[contains(text(),' Logout')][1]") private WebElement logoutButton;
 	
-	//@FindBy(id="container_users") private WebElement usersModuleLink;
-
 	public WebElement getLogoutButton() {
 		return logoutButton;
 	}
 
-//	public WebElement getUsersModuleLink() {
-//		return usersModuleLink;
-//	}
+
 
 	// Business Logic or Action methods or Behavior
 	public void logout() {

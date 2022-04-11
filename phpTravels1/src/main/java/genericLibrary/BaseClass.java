@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
@@ -23,6 +25,8 @@ public class BaseClass implements FrameWorkConstants{
 	public static  PropertyFileReader readFromPropertyFile;
 	public LoginPage login;
 	public HomePage home;
+	
+	// *************************open the browser****************************
 	
 	@BeforeClass
     public void openTheBrowser(@Optional("chrome") String browserName) {
@@ -44,6 +48,7 @@ public class BaseClass implements FrameWorkConstants{
 		explicitWait=new WebDriverWait(driver,EXPLICIT_TIMEOUT);
 		}
 	
+	//*********************launch the url*****************************************
 
 		@BeforeMethod(alwaysRun = true)
 		public void loginToApplication() throws IOException {
@@ -56,10 +61,20 @@ public class BaseClass implements FrameWorkConstants{
 		    
 		    login=new LoginPage(driver);
 		    home=login.LoginPage(username,password);
+		  }
 		
-			
+//**************************logout the application********************************************
 		
-	}
+		@AfterMethod(alwaysRun = true)
+		public void logoutOfApplication() {
+			home.logout();
+			}
+		
+//**************************close the browser******************************************************		
+		@AfterClass(alwaysRun = true)
+		public void closeTheBrowser() {
+			driver.quit();
+		}
 	
 	
 

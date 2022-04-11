@@ -17,11 +17,24 @@ public class HotelsPage {
 	private WebElement hotel;
 	
 	
-	@FindBy(xpath="//input[@class='select2-search__field']")
+	@FindBy(xpath="//span[@id='select2-hotels_city-container']")
 	private WebElement search_bar;
+	
+	@FindBy(xpath="//input[@class='select2-search__field']")
+	private WebElement search_city;
+	
+	@FindBy(xpath="//li[text()='Bangalore,India']")
+	private WebElement city1;
+	
+	public WebElement getCity() {
+		return city1;
+	}
 	
 	@FindBy(xpath="//input[@id='checkin']")
 	private WebElement checkin;
+	
+	@FindBy(xpath="(//td[text()='13'])[1]")
+	private WebElement checkin_day;
 	
 	@FindBy(xpath="//input[@id='checkout']")
 	private WebElement checkout;
@@ -35,7 +48,7 @@ public class HotelsPage {
 	@FindBy(xpath="//div[@class='roomDec']")
 	private WebElement room_dec;
 	
-	@FindBy(xpath="(//div[@class='qtyInc'][1])")
+	@FindBy(xpath="(//div[@class='qtyInc'])[2]")
 	private WebElement adult_inc;
 	
 	@FindBy(xpath="(//div[@class='qtyInc'])[3]")
@@ -46,6 +59,8 @@ public class HotelsPage {
 	
 	@FindBy(xpath="//button[@id='submit']")
 	private WebElement search;
+	
+	
 
 	public WebElement getHotel() {
 		return hotel;
@@ -90,9 +105,24 @@ public class HotelsPage {
 	public WebElement getSearch() {
 		return search;
 	}
+
+	public WebElement getSearchCity() {
+		return search_city;
+	}
 	
+	public WebElement getCheckInDay() {
+		
+		return checkin_day;
+	}
 	
+	@FindBy(xpath="(//td[text()='16'])[2]")
+	private WebElement checkout_day;
+
+	public WebElement getCheckoutDay() {
+		return checkout_day;
+	}
 	
+
 
 
 }

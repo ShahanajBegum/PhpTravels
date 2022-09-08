@@ -51,7 +51,7 @@ public class BaseClass implements FrameWorkConstants{
 	//*********************launch the url*****************************************
 
 		@BeforeMethod(alwaysRun = true)
-		public void loginToApplication() throws IOException {
+		public void loginToApplication() throws IOException, InterruptedException {
 			readFromPropertyFile = new PropertyFileReader();
 			String url = readFromPropertyFile.getValueProperty("Url");
 			String username = readFromPropertyFile.getValueProperty("UserName");

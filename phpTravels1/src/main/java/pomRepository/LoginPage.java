@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import genericLibrary.JavaScriptUtil;
+
 public class LoginPage {
 
 
@@ -50,10 +52,14 @@ public class LoginPage {
 		
 	}
 
-      public HomePage LoginPage(String username,String password) {
+      public HomePage LoginPage(String username,String password) throws InterruptedException {
     	username_TextField.sendKeys(username);
     	password_TextField.sendKeys(password);
     	gotit.click();
+    	JavaScriptUtil js=new JavaScriptUtil(driver);
+    	js.jsScrollBy(0,300); 
+    	Thread.sleep(2000);
+    	
     	loginbutton.click();
     	 return new HomePage(driver);
 	}

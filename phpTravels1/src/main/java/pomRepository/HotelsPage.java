@@ -33,7 +33,7 @@ public class HotelsPage {
 	@FindBy(xpath="//input[@id='checkin']")
 	private WebElement checkin;
 	
-	@FindBy(xpath="(//td[text()='13'])[1]")
+	@FindBy(xpath="(//td[text()='21'])[1]")
 	private WebElement checkin_day;
 	
 	@FindBy(xpath="//input[@id='checkout']")

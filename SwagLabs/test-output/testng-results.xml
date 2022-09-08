@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[chromebrowser lanched succesfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser window is maximized successfully]]>
+    </line>
+    <line>
+      <![CDATA[chromebrowser lanched succesfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser window is maximized successfully]]>
+    </line>
+    <line>
+      <![CDATA[chromebrowser lanched succesfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser window is maximized successfully]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="130232" started-at="2022-08-29T17:34:53 IST" finished-at="2022-08-29T17:37:04 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="130232" started-at="2022-08-29T17:34:53 IST" finished-at="2022-08-29T17:37:04 IST">
+      <class name="users.Tc_01_Test">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:users.Tc_01_Test@34c4973]" name="openBrowser" is-config="true" duration-ms="49078" started-at="2022-08-29T17:34:53 IST" finished-at="2022-08-29T17:35:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[chromebrowser lanched succesfully]]>
+            </line>
+            <line>
+              <![CDATA[Browser window is maximized successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="loginApplication()[pri:0, instance:users.Tc_01_Test@34c4973]" name="loginApplication" is-config="true" duration-ms="10931" started-at="2022-08-29T17:35:43 IST" finished-at="2022-08-29T17:35:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method status="PASS" signature="Tc_01()[pri:0, instance:users.Tc_01_Test@34c4973]" name="Tc_01" duration-ms="6095" started-at="2022-08-29T17:35:53 IST" finished-at="2022-08-29T17:36:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_01 -->
+        <test-method status="PASS" signature="logoutApplication()[pri:0, instance:users.Tc_01_Test@34c4973]" name="logoutApplication" is-config="true" duration-ms="6538" started-at="2022-08-29T17:36:00 IST" finished-at="2022-08-29T17:36:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutApplication -->
+      </class> <!-- users.Tc_01_Test -->
+      <class name="users.Tc_03_Test">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:users.Tc_03_Test@7a765367]" name="openBrowser" is-config="true" duration-ms="3753" started-at="2022-08-29T17:36:32 IST" finished-at="2022-08-29T17:36:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[chromebrowser lanched succesfully]]>
+            </line>
+            <line>
+              <![CDATA[Browser window is maximized successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="loginApplication()[pri:0, instance:users.Tc_03_Test@7a765367]" name="loginApplication" is-config="true" duration-ms="11391" started-at="2022-08-29T17:36:35 IST" finished-at="2022-08-29T17:36:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method status="PASS" signature="Tc03()[pri:0, instance:users.Tc_03_Test@7a765367]" name="Tc03" duration-ms="11736" started-at="2022-08-29T17:36:47 IST" finished-at="2022-08-29T17:36:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc03 -->
+        <test-method status="PASS" signature="logoutApplication()[pri:0, instance:users.Tc_03_Test@7a765367]" name="logoutApplication" is-config="true" duration-ms="5213" started-at="2022-08-29T17:36:58 IST" finished-at="2022-08-29T17:37:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutApplication -->
+      </class> <!-- users.Tc_03_Test -->
+      <class name="users.Tc_02_Test">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:users.Tc_02_Test@52feb982]" name="openBrowser" is-config="true" duration-ms="3915" started-at="2022-08-29T17:36:06 IST" finished-at="2022-08-29T17:36:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[chromebrowser lanched succesfully]]>
+            </line>
+            <line>
+              <![CDATA[Browser window is maximized successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="loginApplication()[pri:0, instance:users.Tc_02_Test@52feb982]" name="loginApplication" is-config="true" duration-ms="7100" started-at="2022-08-29T17:36:10 IST" finished-at="2022-08-29T17:36:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method status="PASS" signature="Tc02()[pri:0, instance:users.Tc_02_Test@52feb982]" name="Tc02" duration-ms="9262" started-at="2022-08-29T17:36:17 IST" finished-at="2022-08-29T17:36:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc02 -->
+        <test-method status="PASS" signature="logoutApplication()[pri:0, instance:users.Tc_02_Test@52feb982]" name="logoutApplication" is-config="true" duration-ms="5214" started-at="2022-08-29T17:36:26 IST" finished-at="2022-08-29T17:36:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutApplication -->
+      </class> <!-- users.Tc_02_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
